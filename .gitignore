@@ -1,25 +1,81 @@
-# If you prefer the allow list template instead of the deny list, see community template:
-# https://github.com/github/gitignore/blob/main/community/Golang/Go.AllowList.gitignore
-#
-# Binaries for programs and plugins
-*.exe
-*.exe~
-*.dll
-*.so
-*.dylib
+# === BACKEND (.NET Core) ===
 
-# Test binary, built with `go test -c`
-*.test
+## Build results
+bin/
+obj/
 
-# Output of the go coverage tool, specifically when used with LiteIDE
-*.out
+## User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
 
-# Dependency directories (remove the comment below to include it)
-# vendor/
+## OS generated files
+.DS_Store
+Thumbs.db
 
-# Go workspace file
-go.work
-go.work.sum
+## Logs
+*.log
 
-# env file
+## Visual Studio
+.vscode/
+.vs/
+
+## Rider
+.idea/
+
+## NuGet
+*.nupkg
+packages/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+## ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+## Others
+*.dbmdl
+*.bak
+*.orig
+
+## Environment files
 .env
+
+# === FRONTEND (Vue 3 + Vite ou Vue CLI) ===
+
+## Node modules
+frontend/node_modules/
+**/node_modules/
+
+## Build output
+frontend/dist/
+dist/
+
+## Local env files
+frontend/.env.local
+frontend/.env.*.local
+frontend/.env
+
+## Log files
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/pnpm-debug.log*
+
+## IDE
+frontend/.idea/
+frontend/.vscode/
+
+## System
+frontend/.DS_Store
+frontend/Thumbs.db
+
+# === GENERAL ===
+
+# Ignore npm/yarn/lock files if you use a specific one
+# Uncomment one if needed
+
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
