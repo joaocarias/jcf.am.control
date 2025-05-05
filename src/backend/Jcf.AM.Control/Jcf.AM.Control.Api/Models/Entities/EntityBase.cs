@@ -33,6 +33,12 @@ namespace Jcf.AM.Control.Api.Models.Entities
             UserCreateId = userCreateId;
         }
 
+        public EntityBase(Guid id, Guid? userCreateId)
+        {
+            Id = id;
+            UserCreateId = userCreateId;
+        }
+
         public void Delete(Guid? userUpdateId = null)
         {
             UpdateAt = DateTime.UtcNow;

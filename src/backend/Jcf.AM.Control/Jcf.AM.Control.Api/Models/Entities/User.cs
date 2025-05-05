@@ -43,6 +43,15 @@ namespace Jcf.AM.Control.Api.Models.Entities
             Role = role;
         }
 
+        public User(Guid id, string name, string email, string password, string login, string role, Guid? userCreateId) : base(id, userCreateId)
+        {
+            Name = name;
+            Email = email;
+            Password = password;
+            Login = login;
+            Role = role;
+        }
+
         private User() : base()
         {
             Name = string.Empty;
